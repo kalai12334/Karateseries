@@ -1,0 +1,20 @@
+<testsuite failures="0" name="src/test/java/testing/randomapi.feature" skipped="0" tests="1" time="1.971538">
+  <testcase classname="src.test.java.testing.randomapi" name="Create a user with the given data" time="1.971538">
+    <system-out>* url 'https://gorest.co.in' .............................................. passed
+* def random_string = ..................................................... passed
+* def randomString = random_string(10) .................................... passed
+* def requestPayload = read('classpath:src/test/resource-payload.json') ... passed
+* set requestPayload.email = randomString + "@gmail.com" .................. passed
+* set requestPayload.name = randomString .................................. passed
+* print requestPayload .................................................... passed
+Given path '/public/v1/users' ............................................. passed
+And request requestPayload ................................................ passed
+And header Authorization = 'Bearer ' +tokenID ............................. passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* print response .......................................................... passed
+And match $.data.name == '#present' ....................................... passed
+And match $.data.name == '#present' ....................................... passed
+And match $.data.email == requestPayload.email ............................ passed</system-out>
+  </testcase>
+</testsuite>

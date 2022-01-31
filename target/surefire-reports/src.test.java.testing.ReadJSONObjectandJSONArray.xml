@@ -1,0 +1,7 @@
+<testsuite failures="0" name="src/test/java/testing/ReadJSONObjectandJSONArray.feature" skipped="0" tests="1" time="0.060971">
+  <testcase classname="src.test.java.testing.ReadJSONObjectandJSONArray" name="Complex Json reader" time="0.060971">
+    <system-out>* def jsonObject = ........................................................ passed
+* print jsonObject.glossary.GlossDiv ...................................... passed
+* print jsonObject.GlossDef ............................................... passed</system-out>
+  </testcase>
+</testsuite>

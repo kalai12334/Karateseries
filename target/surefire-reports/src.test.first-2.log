@@ -1,0 +1,2 @@
+22:00:44.257 found scenario at line: 7 - ^Test a sample GET API$
+22:00:44.362 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js

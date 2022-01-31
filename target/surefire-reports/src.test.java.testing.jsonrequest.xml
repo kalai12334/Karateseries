@@ -1,0 +1,17 @@
+<testsuite failures="1" name="src/test/java/testing/jsonrequest.feature" skipped="0" tests="1" time="1.88473">
+  <testcase classname="src.test.java.testing.jsonrequest" name="Create a user with  the given data" time="1.88473">
+    <failure message="jsonrequest.feature:12 - status code was: 401, expected: 201, response time: 1374, url: https://gorest.co.in/public/v1/users, response: {&quot;message&quot;:&quot;Authentication failed&quot;}">* url 'https://gorest.co.in' .............................................. passed
+* def requestPayload = read('classpath:src/test/resource-payload.json') ... passed
+Given path '/public/v1/users' ............................................. passed
+And request requestPayload ................................................ passed
+And header Authorization = 'Bearer' + tokenID ............................. passed
+When method post .......................................................... passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: jsonrequest.feature:12 - status code was: 401, expected: 201, response time: 1374, url: https://gorest.co.in/public/v1/users, response: {"message":"Authentication failed"}&#13;
+	at ✽.Then status 201 (jsonrequest.feature:12)&#13;
+
+* print response .......................................................... skipped</failure>
+  </testcase>
+</testsuite>

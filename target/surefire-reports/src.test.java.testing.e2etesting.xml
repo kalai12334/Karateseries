@@ -1,0 +1,48 @@
+<testsuite failures="0" name="src/test/java/testing/e2etesting.feature" skipped="0" tests="3" time="1.710697">
+  <testcase classname="src.test.java.testing.e2etesting" name="create user" time="0.993247">
+    <system-out>Given url 'https://reqres.in/api/users' ................................... passed
+* def requestPayload = .................................................... passed
+And request requestPayload ................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.testing.e2etesting" name="update user" time="0.348124">
+    <system-out>Given url 'https://reqres.in/api/users' ................................... passed
+* def requestPayload = .................................................... passed
+And request requestPayload ................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* print response .......................................................... passed
+Given url 'https://reqres.in/api/users' ................................... passed
+* def requestputPayload = ................................................. passed
+And request requestputPayload ............................................. passed
+When method PUt ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.testing.e2etesting" name="3" time="0.369326">
+    <system-out>Given url 'https://reqres.in/api/users' ................................... passed
+* def requestPayload = .................................................... passed
+And request requestPayload ................................................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* print response .......................................................... passed
+Given url 'https://reqres.in/api/users' ................................... passed
+* def requestputPayload = ................................................. passed
+And request requestputPayload ............................................. passed
+When method PUt ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+Given url 'https://reqres.in/api/users' ................................... passed
+* def random_string = ..................................................... passed
+* def requestPayload = .................................................... passed
+* def randomString = random_string(10) .................................... passed
+* set requestPayload.name = randomString .................................. passed
+* set requestPayload.job = 'Driver' ....................................... passed
+And request requestPayload ................................................ passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

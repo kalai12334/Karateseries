@@ -1,0 +1,14 @@
+<testsuite failures="0" name="src/test/java/testing/Postapi.feature" skipped="0" tests="1" time="1.944773">
+  <testcase classname="src.test.java.testing.Postapi" name="Create a user with  the given data" time="1.944773">
+    <system-out>* url 'https://gorest.co.in' .............................................. passed
+* def requestPayload = .................................................... passed
+Given path '/public/v1/users' ............................................. passed
+And request requestPayload ................................................ passed
+And header Authorization = 'Bearer' + tokenID ............................. passed
+When method post .......................................................... passed
+Then status 401 ........................................................... passed
+* print response .......................................................... passed
+* print $.message ......................................................... passed
+And match $.message == 'Authentication failed' ............................ passed</system-out>
+  </testcase>
+</testsuite>

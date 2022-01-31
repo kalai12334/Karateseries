@@ -1,0 +1,14 @@
+<testsuite failures="1" name="src/test/java/testing/postdummyapi.feature" skipped="0" tests="1" time="1.382571">
+  <testcase classname="src.test.java.testing.postdummyapi" name="1" time="1.382571">
+    <failure message="postdummyapi.feature:9 - path: $.support.text, actual: 'To keep ReqRes free, contributions towards server costs are appreciated!', expected: 'To keep ReqRes free, contributions towards server costs are appreciated', reason: not equal">Given url 'https://reqres.in/api/users' ................................... passed
+And path '/2' ............................................................. passed
+And method GET ............................................................ passed
+And status 200 ............................................................ passed
+* print response .......................................................... passed
+And match $.support.text  == 'To keep ReqRes free, contributions towards server costs are appreciated' . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: postdummyapi.feature:9 - path: $.support.text, actual: 'To keep ReqRes free, contributions towards server costs are appreciated!', expected: 'To keep ReqRes free, contributions towards server costs are appreciated', reason: not equal&#13;
+	at ✽.And match $.support.text  == 'To keep ReqRes free, contributions towards server costs are appreciated' (postdummyapi.feature:9)</failure>
+  </testcase>
+</testsuite>

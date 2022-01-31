@@ -1,0 +1,6 @@
+<testsuite failures="0" name="src/test/java/testing/first.feature" skipped="0" tests="1" time="0.046028">
+  <testcase classname="src.test.java.testing.first" name="Complex Json reader" time="0.046028">
+    <system-out>* def jsonObject = ........................................................ passed
+* print jsonObject ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

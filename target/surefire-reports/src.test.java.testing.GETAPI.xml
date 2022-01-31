@@ -1,0 +1,94 @@
+<testsuite failures="0" name="src/test/java/testing/GETAPI.feature" skipped="0" tests="4" time="5.866758">
+  <testcase classname="src.test.java.testing.GETAPI" name="GET API- user not Found" time="2.056978">
+    <system-out>Given url baseUrl+ 'public/v1/users/'  //passing baseUrl from config url .. passed
+And path '899' ............................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def jsonResponse = response ............................................. passed
+* print jsonResponse ...................................................... passed
+* print jsonResponse.data ................................................. passed
+* print jsonResponse.data.email ........................................... passed
+* print jsonResponse.data.meta[0] ......................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.testing.GETAPI" name="GET API- user not Found" time="1.244549">
+    <system-out>Given url baseUrl+ 'public/v1/users/'  //passing baseUrl from config url .. passed
+And path '899' ............................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def jsonResponse = response ............................................. passed
+* print jsonResponse ...................................................... passed
+* print jsonResponse.data ................................................. passed
+* print jsonResponse.data.email ........................................... passed
+* print jsonResponse.data.meta[0] ......................................... passed
+Given url baseUrl+ 'public/v1/users/' ..................................... passed
+And path '1' .............................................................. passed
+When method GET ........................................................... passed
+Then status 404 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.testing.GETAPI" name="GET API with Query Param" time="1.309905">
+    <system-out>Given url baseUrl+ 'public/v1/users/'  //passing baseUrl from config url .. passed
+And path '899' ............................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def jsonResponse = response ............................................. passed
+* print jsonResponse ...................................................... passed
+* print jsonResponse.data ................................................. passed
+* print jsonResponse.data.email ........................................... passed
+* print jsonResponse.data.meta[0] ......................................... passed
+Given url baseUrl+ 'public/v1/users/' ..................................... passed
+And path '1' .............................................................. passed
+When method GET ........................................................... passed
+Then status 404 ........................................................... passed
+And print response ........................................................ passed
+* def query = {gender:'female',id:'1875',name:'Dayamayee Trivedi'} ........ passed
+Given url baseUrl+ 'public/v1/users/' ..................................... passed
+And params query .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print JsonResponse = response ......................................... passed
+And print JsonResponse.data.length ........................................ passed
+* def count = JsonResponse.data.length .................................... passed
+* print count ............................................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.testing.GETAPI" name="GET API Query example" time="1.255326">
+    <system-out>Given url baseUrl+ 'public/v1/users/'  //passing baseUrl from config url .. passed
+And path '899' ............................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def jsonResponse = response ............................................. passed
+* print jsonResponse ...................................................... passed
+* print jsonResponse.data ................................................. passed
+* print jsonResponse.data.email ........................................... passed
+* print jsonResponse.data.meta[0] ......................................... passed
+Given url baseUrl+ 'public/v1/users/' ..................................... passed
+And path '1' .............................................................. passed
+When method GET ........................................................... passed
+Then status 404 ........................................................... passed
+And print response ........................................................ passed
+* def query = {gender:'female',id:'1875',name:'Dayamayee Trivedi'} ........ passed
+Given url baseUrl+ 'public/v1/users/' ..................................... passed
+And params query .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print JsonResponse = response ......................................... passed
+And print JsonResponse.data.length ........................................ passed
+* def count = JsonResponse.data.length .................................... passed
+* print count ............................................................. passed
+* def query = {status:'active',name:'Deeptimay Deshpande'} ................ passed
+Given url baseUrl +'public/v1/users/' ..................................... passed
+And params query .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def pagescount =  response.meta.pagination.pages ........................ passed
+* print response.data.email ............................................... passed
+* def email = response.data.email ......................................... passed
+* print email ............................................................. passed
+* print response.meta.pagination.page ..................................... passed</system-out>
+  </testcase>
+</testsuite>

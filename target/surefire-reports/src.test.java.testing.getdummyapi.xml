@@ -1,0 +1,14 @@
+<testsuite failures="1" name="src/test/java/testing/getdummyapi.feature" skipped="0" tests="1" time="1.452997">
+  <testcase classname="src.test.java.testing.getdummyapi" name="1" time="1.452997">
+    <failure message="getdummyapi.feature:9 - path: $.status, actual: 'success', expected: 'successw', reason: not equal">Given url 'http://dummy.restapiexample.com/api/v1/employee' ............... passed
+And path '/09' ............................................................ passed
+And method GET ............................................................ passed
+And status 200 ............................................................ passed
+* print response .......................................................... passed
+And match $.status == 'successw' .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: getdummyapi.feature:9 - path: $.status, actual: 'success', expected: 'successw', reason: not equal&#13;
+	at ✽.And match $.status == 'successw' (getdummyapi.feature:9)</failure>
+  </testcase>
+</testsuite>

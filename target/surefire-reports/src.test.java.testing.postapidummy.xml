@@ -1,0 +1,21 @@
+<testsuite failures="0" name="src/test/java/testing/postapidummy.feature" skipped="0" tests="1" time="1.927347">
+  <testcase classname="src.test.java.testing.postapidummy" name="1" time="1.927347">
+    <system-out>Given url 'https://reqres.in/api/users' ................................... passed
+* request requestPayload = read('classpath:src/test/request.json') ........ passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* print response .......................................................... passed
+And match $.job == 'leader' ............................................... passed
+* def job = $.job ......................................................... passed
+* print job ............................................................... passed
+* def requestPutPayload = ................................................. passed
+Given url 'https://reqres.in/api/users' ................................... passed
+And request requestPutPayload ............................................. passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+Given url 'https://reqres.in/api/users' ................................... passed
+When method delete ........................................................ passed
+Then status 204 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

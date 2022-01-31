@@ -1,0 +1,12 @@
+<testsuite failures="1" name="src/test/first.feature" skipped="0" tests="1" time="0">
+  <testcase classname="src.test.first" name="Test a sample GET API" time="0">
+    <failure message="first.feature:8 - no step-definition method match found for: URL 'https://reqres.in/api/users?page=2'">Given URL 'https://reqres.in/api/users?page=2' ............................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: first.feature:8 - no step-definition method match found for: URL 'https://reqres.in/api/users?page=2'&#13;
+	at ✽.Given URL 'https://reqres.in/api/users?page=2' (first.feature:8)&#13;
+
+When method GET ........................................................... skipped
+Then status 200 ........................................................... skipped</failure>
+  </testcase>
+</testsuite>

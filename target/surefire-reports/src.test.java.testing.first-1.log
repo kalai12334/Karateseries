@@ -1,0 +1,4 @@
+22:04:07.144 found scenario at line: 2 - ^print string value$
+22:04:07.234 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+22:04:07.237 [print] jjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+22:04:07.240 [print] jjhhh

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.testing.postapidummy</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-01-31 12:35:36 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:2]">[1:2] </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/testing/postapidummy.feature</span><span class="feature-description"></span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:2]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:2]</span><span class="scenario-name"></span>
+</div>
+<div class="scenario-time passed">ms: 1927</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">Given url 'https://reqres.in/api/users'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="1">12:35:33.988 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">* request requestPayload = read('classpath:src/test/request.json')</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">1168</div>
+</div>
+<div class="preformatted" data-parent="3">12:35:34.661 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 34
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_201)
+{"name":"morpheus","job":"leader"}
+
+12:35:35.235 response time in milliseconds: 570.03
+1 &lt; 201
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 6d64b27a8f12f379-ATL
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 84
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 31 Jan 2022 17:35:33 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=fjbW%2FaYwy4JWZfSUJHagG6PX%2FhGNUJRqoZprP8wzHbYFKsV94fOcU%2FrvMHClqKP%2FMC0Y%2BplUWKn7y8%2FsrkQeOiFDMTLGP5jXxQmi%2BFNt5RsCy9%2FvZMkkxQ2ei7E%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; access-control-allow-origin: *
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+1 &lt; etag: W/"54-dDmP7okHHZY/39Pl1I52ZnA4CzQ"
+1 &lt; via: 1.1 vegur
+1 &lt; x-powered-by: Express
+{"name":"morpheus","job":"leader","id":"221","createdAt":"2022-01-31T17:35:33.708Z"}</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="5">12:35:35.238 [print] {
+  "createdAt": "2022-01-31T17:35:33.708Z",
+  "name": "morpheus",
+  "id": "221",
+  "job": "leader"
+}</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">And match $.job == 'leader'</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment"># fetch data from post call</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">* def job = $.job</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">* print job</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="8">12:35:35.248 [print] leader</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment"># 2nd put call -to update user</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">* def requestPutPayload =</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="9">{
+ "name": "kalai",
+  "job": "driver"
+}</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">Given url 'https://reqres.in/api/users'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">And request requestPutPayload</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">When method put</div>
+</div>
+<div class="time-cell passed">382</div>
+</div>
+<div class="preformatted" data-parent="12">12:35:35.253 request:
+2 &gt; PUT https://reqres.in/api/users
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Length: 31
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Host: reqres.in
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_201)
+{"name":"kalai","job":"driver"}
+
+12:35:35.631 response time in milliseconds: 365.00
+2 &lt; 200
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; CF-RAY: 6d64b27cec9d1004-ATL
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Date: Mon, 31 Jan 2022 17:35:34 GMT
+2 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hqZL%2F%2FVYg%2F5DYOqywHWnjmgbnG0hyYQVC8134okgWQeXm6dlp3YCEaCviPFAnEX4E0F%2BAPa5fzUXYZfFpJP2GU%2FCV%2FJqSv00FBrcWEt9ggSUsjrEgm9SRnkDc8U%3D"}],"group":"cf-nel","max_age":604800}
+2 &lt; Server: cloudflare
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: Accept-Encoding
+2 &lt; access-control-allow-origin: *
+2 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+2 &lt; etag: W/"46-fUTuwNQwIBlBYC0CcnjS/EwTNh8"
+2 &lt; via: 1.1 vegur
+2 &lt; x-powered-by: Express
+{"name":"kalai","job":"driver","updatedAt":"2022-01-31T17:35:34.106Z"}</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">Given url 'https://reqres.in/api/users'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">When method delete</div>
+</div>
+<div class="time-cell passed">354</div>
+</div>
+<div class="preformatted" data-parent="15">12:35:35.635 request:
+3 &gt; DELETE https://reqres.in/api/users
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Host: reqres.in
+3 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_201)
+
+12:35:35.986 response time in milliseconds: 350.30
+3 &lt; 204
+3 &lt; CF-Cache-Status: DYNAMIC
+3 &lt; CF-RAY: 6d64b27f48ef8d4c-ATL
+3 &lt; Connection: keep-alive
+3 &lt; Content-Length: 0
+3 &lt; Date: Mon, 31 Jan 2022 17:35:34 GMT
+3 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+3 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+3 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3bYDVKLKWwfRQdAjq0hLL2qaX3iXeNc2xplNVzK%2FPp0G%2BhKhm4ZSrm5GHv847Mgv1S5Sxb0aoreQmvVlI8mrZd9II1xbk9IeQfqRJlyw69XkncdgWRkJGLoaLYA%3D"}],"group":"cf-nel","max_age":604800}
+3 &lt; Server: cloudflare
+3 &lt; access-control-allow-origin: *
+3 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+3 &lt; etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+3 &lt; via: 1.1 vegur
+3 &lt; x-powered-by: Express</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">Then status 204</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="17">12:35:35.987 [print]</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>
